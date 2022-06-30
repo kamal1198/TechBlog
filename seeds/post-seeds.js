@@ -1,0 +1,20 @@
+const { Post } = require('../models');
+
+const postData = [
+    {
+        title: 'Post Test 1',
+        content:
+            'Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, quisquam maxime sunt optio cumque sed tempora? Ipsa, officia? Consectetur qui praesentium consequuntur ducimus amet ex, incidunt molestiae at sed vitae officiis quam veritatis, error modi iusto dicta mollitia. Vitae, obcaecati nesciunt voluptates nisi totam sequi voluptas temporibus quam, earum maxime iste. Fuga, qui. Asperiores molestias quas nesciunt incidunt molestiae! Obcaecati dolore dolores illo laudantium molestias ex quo? Quasi aut ea tempora unde minima. Magnam, repellendus, sequi voluptatum minus labore excepturi ratione accusamus eius eum similique in, aperiam earum harum nobis? Harum id, quasi possimus nemo quisquam, dicta laboriosam vero hic cupiditate rem architecto quas facilis. Tempore ea voluptates id eos ab, officiis numquam explicabo ducimus aliquam sapiente aliquid dolorem amet eius voluptatibus quod officia! Obcaecati nobis quis ab quam iusto ipsam, nemo, facilis quibusdam sint libero numquam similique molestias voluptatibus repellat aut commodi voluptas, natus porro voluptates accusantium error fugit quo nam. Blanditiis fugiat mollitia earum dolor minus praesentium maiores omnis ducimus assumenda. Beatae tempore ducimus eaque maxime, laboriosam voluptatum nobis nulla saepe. Amet id voluptatum voluptatem fugiat quam culpa eius sequi nostrum facilis vero quisquam aspernatur, consectetur sunt repellat perspiciatis rerum minus sapiente delectus! Unde, ipsam autem ratione excepturi natus sunt veniam voluptatibus fugiat est beatae exercitationem accusantium tempora enim? Sit, ducimus? Laboriosam ipsum qui rem eaque odit ad illum ut exercitationem quas impedit dolor non asperiores corrupti, totam, ratione ipsam saepe placeat provident a unde tenetur. Beatae, ratione! Rerum, sed tempore. Velit labore ad soluta animi, impedit blanditiis.',
+        user_id: 1,
+    },
+    {
+        title: 'Post Test 2',
+        content:
+            'Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, quisquam maxime sunt optio cumque sed tempora? Ipsa, officia? Consectetur qui praesentium consequuntur ducimus amet ex, incidunt molestiae at sed vitae officiis quam veritatis, error modi iusto dicta mollitia. Vitae, obcaecati nesciunt voluptates nisi totam sequi voluptas temporibus quam, earum maxime iste. Fuga, qui. Asperiores molestias quas nesciunt incidunt molestiae! Obcaecati dolore dolores illo laudantium molestias ex quo? Quasi aut ea tempora unde minima. Magnam, repellendus, sequi voluptatum minus labore excepturi ratione accusamus eius eum similique in, aperiam earum harum nobis? Harum id, quasi possimus nemo quisquam, dicta laboriosam vero hic cupiditate rem architecto quas facilis. Tempore ea voluptates id eos ab, officiis numquam explicabo ducimus aliquam sapiente aliquid dolorem amet eius voluptatibus quod officia! Obcaecati nobis quis ab quam iusto ipsam, nemo, facilis quibusdam sint libero numquam similique molestias voluptatibus repellat aut commodi voluptas, natus porro voluptates accusantium error fugit quo nam. Blanditiis fugiat mollitia earum dolor minus praesentium maiores omnis ducimus assumenda. Beatae tempore ducimus eaque maxime, laboriosam voluptatum nobis nulla saepe. Amet id voluptatum voluptatem fugiat quam culpa eius sequi nostrum facilis vero quisquam aspernatur, consectetur sunt repellat perspiciatis rerum minus sapiente delectus! Unde, ipsam autem ratione excepturi natus sunt veniam voluptatibus fugiat est beatae exercitationem accusantium tempora enim? Sit, ducimus? Laboriosam ipsum qui rem eaque odit ad illum ut exercitationem quas impedit dolor non asperiores corrupti, totam, ratione ipsam saepe placeat provident a unde tenetur. Beatae, ratione! Rerum, sed tempore. Velit labore ad soluta animi, impedit blanditiis.',
+        user_id: 1,
+    }
+];
+
+const seedPosts = () => Post.bulkCreate(postData);
+
+module.exports = seedPosts;
